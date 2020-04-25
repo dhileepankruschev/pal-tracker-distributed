@@ -2,10 +2,10 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-${UNIQUE_IDENTIFIER}.${DOMAIN}
+  - route: registration-pal-dhileepan-kruschev.cfapps.io
   memory: 1G
   instances: 1
   env:
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    JBP_CONFIG_OPEN_JDK_JRE: "{ jre: { version: 11.+ } }"
   services:
   - tracker-registration-database
