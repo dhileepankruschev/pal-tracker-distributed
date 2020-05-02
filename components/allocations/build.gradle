@@ -3,4 +3,5 @@ dependencies {
     compile "org.springframework:spring-jdbc:$springVersion"
 
     testCompile project(":components:test-support")
+    compile "io.github.resilience4j:resilience4j-spring-boot2:1.2.0"
 }
